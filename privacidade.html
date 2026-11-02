@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="icone.png">
+<title>Privacidade da Cidadela Z</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: documento legal com a identidade da Cidadela Z — faixa da marca, título em estêncil, seções numeradas (a numeração é a das cláusulas) */
+:root {
+	--bg: #eef1ea;
+	--panel: #fafcf7;
+	--fg: #151a12;
+	--muted: #56614f;
+	--line: #d2d9cb;
+	--accent: #237510;
+	--display: "Big Shoulders Stencil Display", "Impact", "Arial Narrow", sans-serif;
+	--body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+	--mono: "IBM Plex Mono", "Consolas", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) { --bg: #090c08; --panel: #11160f; --fg: #e6ecdf; --muted: #96a28b; --line: #232c1f; --accent: #6dff3d; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #090c08; --panel: #11160f; --fg: #e6ecdf; --muted: #96a28b; --line: #232c1f; --accent: #6dff3d; color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+	background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65;
+	padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 56px;
+}
+.wrap { max-width: 760px; margin: 0 auto; }
+header { padding-block: 32px 22px; border-bottom: 1px solid var(--line); display: grid; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.brand img { width: 48px; height: 48px; }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(40px, 8vw, 60px); line-height: .95; margin: 0; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0; max-width: 65ch; }
+.date { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+section { padding-block: 18px 4px; }
+h2 { font-family: var(--body); font-weight: 600; font-size: 19px; margin: 0 0 6px; display: flex; gap: 10px; align-items: baseline; text-wrap: balance; }
+h2 span { font-family: var(--mono); font-size: 13px; color: var(--accent); min-width: 2ch; }
+p, ul { margin: 0 0 10px; max-width: 68ch; }
+ul { padding-left: 20px; display: grid; gap: 6px; }
+b { font-weight: 600; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.contact { margin-top: 26px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.contact code { font-family: var(--mono); font-size: 14px; user-select: all; }
+footer { margin-top: 30px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<div class="brand"><img src="icone.png" alt="" width="48" height="48"><span>Cidadela Z · roleplay de apocalipse zumbi</span></div>
+		<h1>Política de Privacidade</h1>
+		<p class="lead">Que dados a Cidadela Z guarda, para que usa e como pedir para apagar. Vale para o servidor de roleplay (FiveM), o site, a loja, o Discord e as ferramentas da equipe, incluindo a ferramenta que publica vídeos na nossa conta do TikTok.</p>
+		<div class="date">Última atualização: 01/11/2026</div>
+	</header>
+
+	<section><h2><span>1</span>O que guardamos</h2>
+	<ul>
+		<li><b>No jogo:</b> os identificadores que o FiveM envia ao entrar (licença do Rockstar/FiveM, ID do Discord e endereço de conexão), o nome do personagem e o que acontece com ele na cidade (itens, dinheiro do jogo, veículos e registros de ações).</li>
+		<li><b>Na loja e no site:</b> ao entrar com o Discord, recebemos o seu ID, nome de usuário e avatar. Guardamos os pedidos, os valores e o histórico de cada compra.</li>
+		<li><b>No Discord:</b> mensagens dos tickets e registros dos nossos bots (cargos, ponto da equipe e avisos).</li>
+	</ul>
+	<p>Não pedimos nem guardamos senha, número de cartão ou documento. Pagamentos por Pix são feitos direto no seu banco; só guardamos o comprovante que você mandar no ticket.</p></section>
+
+	<section><h2><span>2</span>Para que usamos</h2>
+	<p>Para o jogo funcionar (salvar o seu personagem e o seu progresso), entregar o que foi comprado, dar cargos no Discord, investigar trapaça e duplicação de itens e atender pedidos de suporte. Não vendemos nem alugamos os seus dados e não usamos para propaganda de terceiros.</p></section>
+
+	<section><h2><span>3</span>Ferramenta de publicação no TikTok</h2>
+	<p>A equipe usa uma ferramenta interna, conectada pela API oficial do TikTok, para publicar vídeos da cidade <b>somente na conta oficial da Cidadela Z (@cidadelaz)</b>. Ela recebe do TikTok apenas o necessário para isso: a identificação da nossa conta, o nome de usuário e a autorização para enviar vídeos. Essa autorização fica guardada só no computador da equipe, não é compartilhada e pode ser revogada a qualquer momento nas configurações do TikTok. A ferramenta não acessa contas de outras pessoas e não coleta dados de quem assiste aos vídeos.</p></section>
+
+	<section><h2><span>4</span>Com quem compartilhamos</h2>
+	<p>Só com os serviços que fazem a cidade funcionar: o FiveM/Cfx.re (conexão ao servidor), o Discord (login e comunidade) e o TikTok (publicação na nossa conta). Também podemos entregar dados a autoridades quando a lei exigir.</p></section>
+
+	<section><h2><span>5</span>Por quanto tempo</h2>
+	<p>Os dados do personagem e da conta ficam enquanto você joga na cidade. Pedidos da loja ficam guardados para controle financeiro. Registros de segurança podem ficar guardados por mais tempo para combater trapaça.</p></section>
+
+	<section><h2><span>6</span>Seus direitos</h2>
+	<p>Você pode pedir para ver, corrigir ou apagar os seus dados, ou para tirar um vídeo em que aparece. Apagar a conta apaga também os personagens e o que eles têm no jogo.</p></section>
+
+	<section><h2><span>7</span>Mudanças nesta política</h2>
+	<p>Podemos atualizar esta política. A versão em vigor é sempre a desta página, com a data no topo.</p></section>
+
+	<div class="contact"><b>Contato:</b> abra um ticket no Discord da cidade, <a href="https://discord.gg/56fwCqGZwA" target="_blank" rel="noopener">discord.gg/56fwCqGZwA</a>, e a equipe responde por lá.</div>
+	<footer>Cidadela Z · desenvolvido por xebellzera</footer>
+</div>
+</body>
+</html>
